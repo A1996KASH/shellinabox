@@ -51,7 +51,7 @@ if [ "$SIAB_SCRIPT" != "none" ]; then
 	/usr/bin/curl -s -k ${SIAB_SCRIPT} > /prep.sh
 	chmod +x /prep.sh
 	echo "Running ${SIAB_SCRIPT} .."
-	/prep.sh
+	/prep.sh mongod --fork --syslog
 	set -e
 fi
 

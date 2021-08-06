@@ -1,0 +1,1 @@
+docker run -d -p 4200:4200 -p 27017:27017 -e SIAB_SCRIPT=https://raw.githubusercontent.com/docker-library/mongo/058b4d1eb2e7c083c16f458bd7ed519b079b1e70/5.0/docker-entrypoint.sh -e SIAB_PASSWORD=akash -e SIAB_SUDO=true -e SIAB_SSL=false testmongo:0.2
